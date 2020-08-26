@@ -22,7 +22,6 @@ pigeon_data = {
 def nyc_pigeon_organizer(data)
 
 data.each_with_object({}) do |(key, value), a1|
-    a1[key]
 binding.pry
 end
 
