@@ -31,7 +31,7 @@ data.each_with_object({}) do |(key, value), new_hash|
       if !new_hash[name_value][key]
         new_hash[name_value][key] = []
       end
-        new_hash[name_value][key][value].push(k1.to_s)
+        new_hash[name_value][key].push(k1.to_s)
 binding.pry   
     end
   end
