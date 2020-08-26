@@ -26,31 +26,7 @@ data.each_with_object({}) do |(key, value), a1|
 binding.pry
 end
 
-def pull_keys(data)
- get_keys = []
- data.each_with_object({}) do |(key, value), a1| 
-    a1[value] = get_keys << key
- end 
- get_keys
-end
 
-def pull_values(data)
-  get_values = []
-  
-  data.each_with_object({}) do |(key, value), a1|
-   a1[value] = value.each_with_object({}) {|(k1, v1), a2|  get_values << a2[v1] = k1} 
-end
- get_values.to_s
-end
-
-#combine all three compents into the new hash {name: => {:color => [], :gender => [], :lives => []}}
-
-new_hash = [pull_names(data)][pull_keys(data)][pull_values(data).push]
-p new_hash
-
-# pull_names(data)
-# pull_keys(data)
-# pull_values(data)
 end
 binding.pry   
 nyc_pigeon_organizer(pigeon_data)
