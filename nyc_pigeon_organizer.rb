@@ -28,7 +28,8 @@ data.each_with_object({}) do |(key, value), new_hash|
       if !new_hash[name_value]
        new_hash[name_value] = {}
       end
-      if !new_hash[name_value][v1]
+      if !new_hash[name_value][key]
+        new_hash[name_value][key] = []
 binding.pry   
     end
   end
