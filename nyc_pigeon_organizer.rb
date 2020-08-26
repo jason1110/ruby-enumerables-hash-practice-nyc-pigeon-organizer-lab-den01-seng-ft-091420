@@ -32,7 +32,6 @@ data.each_with_object({}) do |(key, value), new_hash|
         new_hash[name_value][key] = []
       end
         new_hash[name_value][key].push(k1.to_s)
-binding.pry   
     end
   end
 end
