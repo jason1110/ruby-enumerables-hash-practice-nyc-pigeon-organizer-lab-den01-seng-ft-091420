@@ -23,11 +23,11 @@ def nyc_pigeon_organizer(data)
 
 data.each_with_object({}) do |(key, value), new_hash|
 #binding.pry
-value.each do |k1, v1|
-v1.each do
+  value.each do |k1, v1|
+    v1.each do |name_value|
 binding.pry   
-end
-end
+    end
+  end
 end
 
 end
