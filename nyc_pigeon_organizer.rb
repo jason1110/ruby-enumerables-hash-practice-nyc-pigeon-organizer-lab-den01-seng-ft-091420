@@ -24,7 +24,6 @@ def nyc_pigeon_organizer(data)
 data.each_with_object({}) do |(key, value), a1|
     a1[value] = "hello"
   binding.pry
-  end
 end
 
 def pull_keys(data)
