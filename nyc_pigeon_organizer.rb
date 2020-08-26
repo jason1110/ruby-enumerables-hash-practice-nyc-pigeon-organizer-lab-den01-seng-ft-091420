@@ -27,7 +27,8 @@ data.each_with_object({}) do |(key, value), new_hash|
     v1.each do |name_value|
       if !new_hash[name_value]
        new_hash[name_value] = {}
-      end 
+      end
+      if !new_hash[name_value][v1]
 binding.pry   
     end
   end
