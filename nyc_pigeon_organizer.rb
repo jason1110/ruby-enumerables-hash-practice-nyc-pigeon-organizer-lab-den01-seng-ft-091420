@@ -20,8 +20,7 @@ pigeon_data = {
 }
 
 def nyc_pigeon_organizer(data)
-reorganized_hash = {}
-data.each_with_object({}) do |(key, value), new_hash|
+reorganized_hash = data.each_with_object({}) do |(key, value), new_hash|
 #binding.pry
   value.each do |k1, v1|
     v1.each do |name_value|
@@ -31,7 +30,7 @@ data.each_with_object({}) do |(key, value), new_hash|
       if !new_hash[name_value][key]
         new_hash[name_value][key] = []
       end
-      reorganized_hash =   new_hash[name_value][key].push(k1.to_s)
+      new_hash[name_value][key].push(k1.to_s)
     end
   end
 end
