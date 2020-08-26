@@ -26,7 +26,6 @@ data.each_with_object({}) do |(key, value), a1|
   binding.pry
         a2[k1] = v1.each_with_object({}) do |(k2,v2), a3| 
           a3[v2] = 
-        end  
     end
  binding.pry
   end
