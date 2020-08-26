@@ -27,5 +27,5 @@ end
 
 
 end
-binding.pry   
+   
 nyc_pigeon_organizer(pigeon_data)
