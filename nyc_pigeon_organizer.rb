@@ -25,6 +25,8 @@ data.each_with_object({}) do |(key, value), new_hash|
 #binding.pry
   value.each do |k1, v1|
     v1.each do |name_value|
+      if name_value != name_value
+       new_hash[name_value]
 binding.pry   
     end
   end
