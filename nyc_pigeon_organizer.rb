@@ -26,7 +26,7 @@ data.each_with_object({}) do |(key, value), new_hash|
  new_hash.each do |k1, v1|
 binding.pry   
 end
-
+end
 
 end
    
